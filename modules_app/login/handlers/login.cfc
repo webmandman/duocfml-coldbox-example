@@ -9,7 +9,8 @@ component extends="coldbox.system.RestHandler" {
 	}
 
 	function auth(event, rc, prc){
-		// 1. Validate username and password
+		
+		// 
 
 		
 		 
@@ -18,7 +19,7 @@ component extends="coldbox.system.RestHandler" {
 		// 3. DuoClient.healthcheck
 		DuoClient.initialize(userid = rc.useremail);
 
-		event.getResponse().setData(session);
+		event.getResponse().setData(DuoClient.getSettings());
 
 	}
 
