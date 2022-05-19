@@ -1,0 +1,11 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\modern-functional-fluent-cfml-rest"
+		}
+	],
+    "settings": {}
+}

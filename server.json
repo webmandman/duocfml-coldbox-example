@@ -1,0 +1,12 @@
+{
+    "app":{
+        "cfengine":"adobe@2021.0.3+329779"
+    },
+    "web":{
+        "directoryBrowsing":true,
+        "rewrites":{
+            "enable":true
+        }
+    },
+    "name":"login"
+}
