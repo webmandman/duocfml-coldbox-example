@@ -2,7 +2,7 @@ component extends="coldbox.system.RestHandler" {
 
 	property name="DuoClient" inject="DuoClient@duocfml";
 
-	this.allowedMethods = {index='POST',auth='POST',getBaz='GET'};
+	this.allowedMethods = {index='POST',auth='POST',debug='GET'};
 
 	function index(event,rc,prc){
 		event.getResponse().setData("hello");
@@ -10,26 +10,30 @@ component extends="coldbox.system.RestHandler" {
 
 	function auth(event, rc, prc){
 		
-		// 
+		// Step 1, validate username and password
+		// Step 2, initialize the duoclient, health check and redirect to auth
+		var result = DuoClient.initialize(
+			uname = rc.useremail
+		);
 
-		
-		 
-
-
-		// 3. DuoClient.healthcheck
-		DuoClient.initialize(userid = rc.useremail);
-
-		event.getResponse().setData(DuoClient.getSettings());
+		event.getResponse().setData(result);
 
 	}
 
-	function auth_callback(){
+	function auth_callback(event, rc, prc){
 
-		DuoClient.finalize();
+		// Step 3
+		var result = DuoClient.finalize(
+			uname = rc.useremail,
+			state = rc.state,
+			code = rc.code
+		);
+
+		event.getResponse().setData(result);
 	}
 
 	function debug(event,rc,prc){
-		
+		event.getResponse().setData(DuoClient.getSettings());
 	}
 
 	

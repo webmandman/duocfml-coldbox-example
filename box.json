@@ -1,8 +1,10 @@
 {
     "dependencies":{
-        "cbdebugger":"^3.3.2+56"
+        "cbdebugger":"^3.3.2+56",
+        "hyper":"^3.4.1"
     },
     "installPaths":{
-        "cbdebugger":"modules/cbdebugger/"
+        "cbdebugger":"modules/cbdebugger/",
+        "hyper":"modules/hyper/"
     }
 }

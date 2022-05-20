@@ -139,9 +139,10 @@
 		moduleSettings = {
 
 			duocfml : {
-				clientid : getSystemSetting('PSOMAS_DUO_CLIENTID'),
-				clientsecret: getSystemSetting('PSOMAS_DUO_CLIENTSECRET'),
-				apihostname: getSystemSetting('PSOMAS_DUO_APIHOSTNAME')
+				'clientid' : getSystemSetting('DUO_CLIENTID'),
+				'clientsecret': getSystemSetting('DUO_CLIENTSECRET'),
+				'apihostname': getSystemSetting('DUO_APIHOSTNAME'),
+				'duoauthredirecturi': getSystemSetting('DUO_AUTHREDIRECTURI')
 			},
 
 			/**
