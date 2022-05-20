@@ -1,0 +1,40 @@
+{
+    "name": "DUO Web SDK v4 for Coldfusion",
+    "description": "DUO two-factor authentication for CFML web applications.",
+    "shortDescription": "DUO authentication for CFML web apps.",
+    "author": "Daniel Mejia <webmandman@gmail.com>",
+    "slug": "duosdk",
+    "type": "modules",
+    "version": "1.0.0",
+    "homepage": "https://github.com/webmandman/cfml-duosdk",
+    "repository": {
+        "type": "git",
+        "URL": "https://github.com/webmandman/cfml-duosdk"
+    },
+    "bugs": "https://github.com/webmandman/cfml-duosdk",
+    "contributors": [],
+    "dependencies": {
+        "jwt-cfml": "1.2.0"
+    },
+    "installPaths": {
+        "jwt-cfml": "modules/jwtcfml/"
+    },
+    "devDependencies": {},
+    "documentation": "",
+    "ignore": [
+        "**/.*",
+        "/test/",
+        "/tests/",
+        "/coldbox/",
+        "/modules_app/",
+        "Application.cfc"
+    ],
+    "license": [{
+        "type": "Apache2",
+        "URL": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }],
+    "location": "ForgeboxStorage",
+    "keywords": "duo, authentication, two-factor, sdk, multi-factor",
+    "private": false,
+    "scripts": {}
+}
