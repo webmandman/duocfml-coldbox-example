@@ -1,10 +1,12 @@
 {
-    "dependencies":{
-        "cbdebugger":"^3.3.2+56",
-        "hyper":"^3.4.1"
+    "dependencies": {
+        "cbdebugger": "^3.3.2+56",
+        "coldbox": "^6.6.1+2",
+        "hyper": "^3.4.1"
     },
-    "installPaths":{
-        "cbdebugger":"modules/cbdebugger/",
-        "hyper":"modules/hyper/"
+    "installPaths": {
+        "cbdebugger": "modules/cbdebugger/",
+        "coldbox": "coldbox/",
+        "hyper": "modules/hyper/"
     }
 }
