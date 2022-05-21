@@ -200,23 +200,5 @@ component accessors="true" singleton {
 
         return validateResult;
     }
-    
-    private any function healthCheck() {
-
-        return 'healthcheck() ran.';
-        
-    }
-
-    private any function authorize() {
-
-        return 'authorize() ran.';
-
-    }
-
-    private any function token() {
-
-        return 'token() ran.';
-
-    }
 
 }
