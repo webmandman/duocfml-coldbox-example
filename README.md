@@ -1,6 +1,6 @@
 # Requirements
 
-Start a trial with Duo Security at https://signup.duo.com. Setup your account, add yourself and your phone number as an end-user, create an application, and user your application client id, client secret, and api hostname for the required environment variables of this coldbox application.
+Start a trial with Duo Security at https://signup.duo.com. Setup your account, add yourself and your phone number as an end-user, create an application, and use your application's client id, client secret, and api hostname for the required environment variables of this coldbox application.
 
 Learn all about Duo's web sdk requirements at https://duo.com/docs/oauthapi. 
 
