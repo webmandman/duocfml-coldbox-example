@@ -4,6 +4,8 @@ Start a trial with Duo Security at https://signup.duo.com. Setup your account, a
 
 Learn all about Duo's web sdk requirements at https://duo.com/docs/oauthapi. 
 
+Duo requires that the redirect uri is using https. See instructions below.
+
 # Installation
 
 1. git clone https://github.com/webmandman/duocfml-coldbox-example
@@ -12,3 +14,7 @@ Learn all about Duo's web sdk requirements at https://duo.com/docs/oauthapi.
 4. box install
 5. box server start
 
+# Todo
+
+1. Add an actual login form
+2. Add instructions for self-signed cert
