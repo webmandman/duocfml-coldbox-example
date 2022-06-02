@@ -11,10 +11,10 @@ Duo requires that the redirect uri is secure(https). See instructions below.
 1. git clone https://github.com/webmandman/duocfml-coldbox-example
 2. cd duocfml-coldbox-example
 3. create .env file with all required environment variables, see .env.example 
-    - duo_clientid
-    - duo_clientsecret
-    - duo_apihostname
-    - duo_authredirecturi 
+    - duo_clientid (get from your application settings @duosecurity.com)
+    - duo_clientsecret (get from your application settings @duosecurity.com)
+    - duo_apihostname (get from your application settings @duosecurity.com)
+    - duo_authredirecturi (this is the url duo will redirect back to your application)
 6. box install
 7. box server start
 
