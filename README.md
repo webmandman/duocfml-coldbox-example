@@ -10,15 +10,25 @@ Duo requires that the redirect uri is secure(https). See instructions below.
 
 1. git clone https://github.com/webmandman/duocfml-coldbox-example
 2. cd duocfml-coldbox-example
-3. create .env file with all required environment variables
+3. create .env file with all required environment variables, see .env.example 
     - duo_clientid
     - duo_clientsecret
     - duo_apihostname
-    - duo_authredirecturi
-4. Create a self signed certificate
-    - adsfafd
+    - duo_authredirecturi 
 6. box install
 7. box server start
+
+# Create a self-signed certificate
+
+When you start the server(step 7) configured for this app Commandbox will serve the site at https://local.duocfmlexample/ but you'll get a browser warning that it is not secure. Follow the following steps to generate a certificate for https://local.duocfmlexample
+
+1. Edit settings in certificate.cnf as you wish or leave it as is.
+2. In terminal, make sure you have openssl in your PATH.
+3. CD into the root of this application
+4. Run this command `openssl req -new -x509 -newkey rsa:2048 -sha256 -nodes -keyout local.duocfmlexample.key -days 3560 -out local.duocfmlexample.crt -config certificate.cnf`
+5. This will generate two files, local.duocfmlexample.key and local.duocfmlexample.crt
+6. Now add the crt file to your browser keystore or your OS keystore. If you use Chrome to test, then simple add your crt to Trusted Root Certificates via Settings > Privacy > Manage Certs
+
 
 # Todo
 
