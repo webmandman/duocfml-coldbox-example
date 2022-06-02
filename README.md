@@ -43,4 +43,3 @@ When you start the server(step 7) configured for this app Commandbox will serve 
 # Todo
 
 1. Add an actual login form
-2. Add instructions for self signed certificate
