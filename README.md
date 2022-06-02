@@ -28,7 +28,7 @@ When you start the server(step 7) configured for this app Commandbox will serve 
 4. Run this command `openssl req -new -x509 -newkey rsa:2048 -sha256 -nodes -keyout local.duocfmlexample.key -days 3560 -out local.duocfmlexample.crt -config certificate.cnf`
 5. This will generate two files, local.duocfmlexample.key and local.duocfmlexample.crt
 6. Now add the crt file to your browser keystore or your OS keystore. If you use Chrome to test, then simple add your crt to Trusted Root Certificates via Settings > Privacy > Manage Certs
-7. Add the crt and key settings under SSL in server.json. The location of the files can be anywhere on your OS.
+7. Add the certfile and keyfile settings under SSL in server.json. The location of the files can be anywhere on your OS.
 
 ```
 "SSL":{
