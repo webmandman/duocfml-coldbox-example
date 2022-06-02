@@ -23,5 +23,4 @@ Duo requires that the redirect uri is secure(https). See instructions below.
 # Todo
 
 1. Add an actual login form
-2. Add instructions for self-signed cert
-3. Add instructions for self signed certificate
+2. Add instructions for self signed certificate
