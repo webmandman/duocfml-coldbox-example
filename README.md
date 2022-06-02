@@ -38,6 +38,7 @@ When you start the server(step 7) configured for this app Commandbox will serve 
        "keyfile":"local.duocfmlexample.key"
 }
 ```
+8. box server restart
 
 
 # Todo
