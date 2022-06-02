@@ -15,10 +15,10 @@ Duo requires that the redirect uri is secure(https). See instructions below.
     - duo_clientsecret
     - duo_apihostname
     - duo_authredirecturi
-5. box install
-6. box server start
-
-# Create a self signed certificate (testing purposes only)
+4. Create a self signed certificate
+    - adsfafd
+6. box install
+7. box server start
 
 # Todo
 
