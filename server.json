@@ -10,11 +10,11 @@
         "HTTP":{
             "port":"80"
         },
-        "host":"duocfml-example",
+        "host":"local.duocfmlexample",
         "SSL":{
             "enable":"true",
             "port":"443"
         }
     },
-    "name":"login"
+    "name":"DUO CFML Example"
 }
